@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.xhackax47</groupId>
+	<artifactId>JDBC</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>JDBC</name>
+	
+	<properties>
+		<maven.compiler.source>10</maven.compiler.source>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		<project.build.inputEncoding>UTF-8</project.build.inputEncoding>
+		<maven.compiler.target>10</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.inputEncoding>UTF-8</project.reporting.inputEncoding>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.5</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<executions>
+					<execution>
+						<id>default-compile</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+							<source>10</source>
+							<target>10</target>
+						</configuration>
+					</execution>
+					<execution>
+						<id>default-testCompile</id>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+						<configuration>
+							<source>10</source>
+							<target>10</target>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<source>10</source>
+					<target>10</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>
