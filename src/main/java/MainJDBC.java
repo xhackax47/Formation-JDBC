@@ -64,15 +64,22 @@ public class MainJDBC {
 			System.out.println("");
 
 			ServiceSQL.buyBook(conn, 1, 2);
-			
+			Thread.sleep(1 * 1000);
+
 			ServiceSQL.displayCustomerbyBook(conn, b2.getTitle(), b2.getAuthor());
 			ServiceSQL.displayBookByCustomer(conn, c.getLastname(), c.getFirstname(), c.getGender());
-			
-			System.out.println("Fermeture de la connexion BDD");
-			Thread.sleep(3 * 1000);
+			Thread.sleep(1 * 1000);
+
+			System.out.println("");
+			System.out.print("Fermeture de la connexion BDD");
+			Thread.sleep(1 * 1000);
+			System.out.print(".");
+			Thread.sleep(1 * 1000);
+			System.out.print(".");
+			Thread.sleep(1 * 1000);
+			System.out.print(".");
 			conn.close();
 			System.out.println("Connexion à la BDD FERMEE");
-			System.out.println("");
 
 		} catch (SQLException se) {
 			se.printStackTrace();

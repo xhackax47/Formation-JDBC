@@ -46,8 +46,13 @@ public class ServiceBDD {
 	
 	public static Connection connectDB() throws InterruptedException {	
 		Connection conn = null;
-		System.out.println("Connexion à la database...");
-	    Thread.sleep(0,5*1000);
+		System.out.print("Connexion à la database");
+		Thread.sleep(1 * 1000);
+		System.out.print(".");
+		Thread.sleep(1 * 1000);
+		System.out.print(".");
+		Thread.sleep(1 * 1000);
+		System.out.print(".");
 		try {
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
 		} catch (SQLException e) {
